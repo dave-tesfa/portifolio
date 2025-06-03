@@ -1,0 +1,117 @@
+/* experience.css */
+
+#experience {
+  padding: 4rem 2rem;
+  background-color: #f5f8fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+#experience h5 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #007acc;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+#experience h2 {
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #004080;
+}
+
+.container.experience__container {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience__frontend,
+.experience__backend {
+  flex: 1 1 350px;
+  background: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease;
+}
+
+.experience__frontend:hover,
+.experience__backend:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgb(0 0 0 / 0.15);
+}
+
+.experience__frontend h3,
+.experience__backend h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
+  color: #007acc;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 0.4rem;
+}
+
+.experience__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.experience__details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #e6f0ff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: inset 2px 2px 5px #c8dafb, inset -2px -2px 5px #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.experience__details:hover {
+  background-color: #d0e4ff;
+}
+
+.experience__details-icon {
+  color: #007acc;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.experience__details:hover .experience__details-icon {
+  color: #004080;
+}
+
+.experience__details h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+  color: #004080;
+  text-transform: capitalize;
+}
+
+.text-light {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 3px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .container.experience__container {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 2.5rem;
+  }
+}

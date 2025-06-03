@@ -1,0 +1,103 @@
+/* portfolio.css */
+
+#portfolio {
+  padding: 4rem 2rem;
+  background-color: #f9f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+#portfolio h2 {
+  text-align: center;
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.container.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.portfolio__item {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem 2.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio__item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio__item-icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  color: #fff;
+  /* background-color is set inline via React style prop */
+  transition: filter 0.3s ease;
+}
+
+.portfolio__item-icon:hover {
+  filter: brightness(1.1);
+}
+
+.portfolio__item h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.portfolio__item-cta .btn {
+  padding: 0.5rem 1.5rem;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.portfolio__item-cta .btn-primary:hover {
+  background-color: #5848c2;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  #portfolio h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio__item {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .portfolio__item-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+  }
+}

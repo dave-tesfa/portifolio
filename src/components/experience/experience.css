@@ -5,6 +5,7 @@
   background-color: #f5f8fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #222;
+  margin: 0;
 }
 
 #experience h5 {
@@ -12,7 +13,7 @@
   font-size: 1.25rem;
   color: #007acc;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem 0; /* bottom margin 0.5rem kept */
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
@@ -21,7 +22,7 @@
   text-align: center;
   font-size: 2.75rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin: 0 0 3rem 0; /* bottom margin 3rem kept */
   color: #004080;
 }
 
@@ -41,19 +42,21 @@
   padding: 2rem 1.5rem;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgb(0 0 0 / 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin: 0;
 }
 
 .experience__frontend:hover,
 .experience__backend:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgb(0 0 0 / 0.15);
+  background-color: #f0f7ff;
 }
 
 .experience__frontend h3,
 .experience__backend h3 {
   font-size: 1.5rem;
-  margin-bottom: 1.75rem;
+  margin: 0 0 1.75rem 0;
   color: #007acc;
   border-bottom: 2px solid #007acc;
   padding-bottom: 0.4rem;
@@ -63,6 +66,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  margin: 0;
 }
 
 .experience__details {
@@ -74,6 +78,7 @@
   border-radius: 8px;
   box-shadow: inset 2px 2px 5px #c8dafb, inset -2px -2px 5px #ffffff;
   transition: background-color 0.3s ease;
+  margin: 0;
 }
 
 .experience__details:hover {
@@ -102,7 +107,7 @@
 .text-light {
   font-size: 0.875rem;
   color: #666;
-  margin-top: 3px;
+  margin: 0; /* margin-top removed */
   font-weight: 500;
   font-style: italic;
   text-transform: capitalize;
@@ -113,5 +118,6 @@
     flex-direction: column;
     max-width: 100%;
     gap: 2.5rem;
+    margin: 0;
   }
 }
